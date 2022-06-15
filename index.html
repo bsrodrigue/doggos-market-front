@@ -6,25 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Dog Market" />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Document</title>
 </head>
 
 <body>
     <header>
         <div class="wrapper">
-            <nav>
-                <a href="/">Accueil</a>
-                <a href="/">S'inscrire</a>
-                <a href="/">Se connecter</a>
-                <a href="/">Contact</a>
+            <nav class="main-nav">
+
+                <!-- Site sections -->
+                <nav id="site-sections-sub-nav" class="sub-nav">
+                    <!-- Logo -->
+                    <a id="site-logo" href="/">
+                        <div class="material-shadow">
+                            <img src="./img/icons/001-shiba-inu.png" alt="">
+                        </div>
+                    </a>
+                    <a href="/">Doggos Market</a>
+                    <a href="/">Services</a>
+                    <a href="/">Contact</a>
+                </nav>
+
+                <!-- Searchbar -->
+                <form id="nav-searchbar" class="material-shadow" action="">
+                    <input type="text" placeholder="Chercher un chien..." />
+                    <input type="submit" title="Chercher" value="Chercher" />
+                </form>
+
+                <!-- Authentication -->
+                <nav id="auth-sub-nav" class="sub-nav">
+                    <a href="/">S'inscrire</a>
+                    <a href="/">Se connecter</a>
+                </nav>
             </nav>
         </div>
     </header>
-    <!-- <main></main>
-    <footer></footer> -->
+    <main>
+        <section class="welcome-hero">
+            <div class="welcome-hero-content">
+                <a class="welcome-call-to-action" href="/">Trouver un chien</a>
+            </div>
+            <img class="welcome-cover-img" src="./img/photos/dogs/dog0.jpg" alt="" srcset="">
+        </section>
+    </main>
+    <footer>
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/smalllikeart" title="smalllikeart">smalllikeart</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/noomtah" title="noomtah">noomtah</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
 
-    <script src="./scripts/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
