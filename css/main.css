@@ -43,7 +43,7 @@ header a {
 /* Welcome Call to Action */
 
 .welcome-call-to-action {
-    background-color: var(--light-primary-color);
+    background-color: var(--secondary-color);
     padding: 0.2em 0.5em;
     border-radius: 0.5em;
     color: white;
@@ -58,7 +58,7 @@ header a {
 /* Wrapper */
 
 .wrapper {
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1em;
 }
@@ -69,6 +69,21 @@ header a {
 header {
     background-color: var(--primary-color);
     padding: 1em 0;
+}
+
+
+/* Sections */
+
+section {
+    padding: 3em 0;
+}
+
+.section-title-underline {
+    background-color: white;
+    height: 0.5em;
+    width: 50%;
+    border-radius: 0.2em;
+    margin-bottom: 2em;
 }
 
 
@@ -107,6 +122,42 @@ header {
     left: 10%;
     z-index: 1;
     padding: 1em;
+}
+
+
+/* ---------------------------------------------------------------------------- CARDS ------------------------------------------------------------------------------ */
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.card {
+    background-color: white;
+    padding: 1em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title {
+    color: var(--light-primary-color);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.card-button {
+    font-weight: bold;
+    font-size: 0.8em;
+    color: white;
+    background-color: var(--secondary-color);
+    margin: 0.5em 0;
+    padding: 1em;
+    border-radius: 0.5em;
+    text-align: center;
 }
 
 
@@ -168,4 +219,8 @@ header {
 
 .material-shadow {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
 }
